@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <p>
-      <router-link to="/">author@飞鸿飞飞飞</router-link>
-    </p>
+    <router-link to="/"></router-link>
     <router-view></router-view>
   </div>
 </template>
