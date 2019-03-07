@@ -1,0 +1,64 @@
+.ivu-form {
+    height: 390px;
+    width: 600px;
+    // border: 1px solid red;
+    margin: 150px auto;
+    background-color: rgba(255, 255, 255, 0.87);
+    position: relative; // 输入框组件
+    .ivu-form-item {
+        .ivu-form-item-content {
+            margin-right: 80px;
+            &:nth-of-type(1) {
+                margin-top: 140px;
+            }
+            .ivu-input-wrapper {
+                .ivu-input {
+                    height: 40px;
+                    font-size: 16px;
+                    width: 350px;
+                    padding-left: 40px;
+                }
+            } // 图标伪元素
+            .ivu-icon-ios-contact:before,.ivu-icon-ios-key:before {
+                position: absolute;
+                left: 50px;
+                top: 4px;
+                z-index: 2;
+            }
+            .ivu-icon-ios-key:before {
+                transform: rotateZ(-80deg);
+            }
+            .ivu-form-item-error-tip {
+                padding-top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &:nth-of-type(2) {
+            .ivu-form-item-content {
+                margin-top: 10px;
+            }
+        }
+        &:nth-of-type(3) {
+            .ivu-form-item-content {
+                margin-top: 35px;
+                .ivu-btn-primary {
+                    width: 215px;
+                    height: 40px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.login-img {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    z-index: 3;
+    border-radius: 50%;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}

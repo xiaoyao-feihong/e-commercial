@@ -2,6 +2,11 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import "./styles/index.less";
+import iview from "iview";
+import "iview/dist/styles/iview.css";
+
+Vue.use(iview);
 
 Vue.config.productionTip = false;
 
