@@ -58,9 +58,9 @@ export default {
     handleSubmit(name) {
       this.$refs[name].validate(valid => {
         if (valid) {
-          this.$Message.success("Success!");
+          this.$Message.success("登录成功");
         } else {
-          this.$Message.error("Fail!");
+          this.$Message.error("登录失败！");
         }
       });
     },
